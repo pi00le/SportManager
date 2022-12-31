@@ -1,7 +1,7 @@
 {% extends "users/base.html" %}
 {% block title %} Home Page {% endblock title%}
 {% block content %}
-
+    <div class="jumbotron" style="background-color: #F6F6F6">
         <h1 class="display-4">Welcome, {{user.first_name.title|default:'Guest'}}</h1>
         <p class="lead">
             This is <b>sport entities management system</b>
@@ -13,21 +13,24 @@
                     <div class="container" style="margin-top: 50px;">
                         <div class="row">
                             <div class="col-md-12">
-                                <a class="btn btn-primary btn-lg btn-block" role="button">
+                                <a class="btn btn-primary btn-lg btn-block" href="{%url 'my_groups' %}"
+                                role="button" style="background-color: #344D67; border-color: #344D67">
                                 My groups
                                 </a>
                             </div>
                             <br><br>
                             <br><br>
                             <div class="col-md-12">
-                                <a class="btn btn-primary btn-lg btn-block" role="button">
+                                <a class="btn btn-primary btn-lg btn-block" href="{%url 'add_group' %}"
+                                role="button" style="background-color: #344D67; border-color: #344D67">
                                 Add to group
                                 </a>
                             </div>
                             <br><br>
                             <br><br>
                             <div class="col-md-12">
-                                <a class="btn btn-primary btn-lg btn-block" role="button">
+                                <a class="btn btn-primary btn-lg btn-block" href="{%url 'create_group' %}"
+                                role="button" style="background-color: #344D67; border-color: #344D67">
                                 Create group
                                 </a>
                             </div>
@@ -37,13 +40,13 @@
                 <br><br>
                 <br><br>
                 <br><br>
-                <a class="btn btn-primary btn-sm" href="{% url 'logout' %}" role="button">
+                <a class="btn btn-primary btn-sm" href="{% url 'logout' %}" role="button" style="background-color: #444941; border-color: #444941">
                 Logout</a>
             {% else %}
-                <a class="btn btn-primary btn-sm" href="{% url 'login' %}" role="button">
+                <a class="btn btn-primary btn-sm" href="{% url 'login' %}" role="button" style="background-color: #444941; border-color: #444941">
                 Sign in</a>
             {% endif %}
         </p>
-
+    </div>
 
 {% endblock content %}
