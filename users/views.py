@@ -80,4 +80,8 @@ def profile(request):
 
     return render(request, 'users/profile.html', {'user_form': user_form, 'profile_form': profile_form})
 
+def create_group(request):
+    return render(request, 'users/create_group.html')
 
+def add_group(request):
+    return render(request, 'users/add_group.html')

@@ -1,0 +1,55 @@
+{% extends "users/base.html" %}
+{% block title %} Create Group Page {% endblock title%}
+{% block content %}
+
+  <div class="jumbotron" style="background-color: #F6F6F6">
+          <form class="form-horizontal" action='' method="POST">
+    <fieldset>
+      <div id="legend">
+        <legend class="">Register your group</legend>
+      </div>
+      <div class="control-group">
+        <!-- Group Name -->
+        <label class="control-label"  for="group_name"><b>Group Name</b></label>
+        <div class="controls">
+          <input type="text" size="50" maxlength="40" id="username" name="group_name" placeholder="" class="input-xlarge">
+          <p class="help-block">Please, provide your group name</p>
+        </div>
+      </div>
+   
+      <div class="control-group">
+        <!-- Description -->
+        <label class="control-label" for="description" ><b>Description</b></label>
+        <div class="controls">
+          <input type="text" size="50" maxlength="254" id="email" name="description" placeholder="" class="input-xlarge">
+          <p class="help-block">Please provide description of your group</p>
+        </div>
+      </div>
+   
+      <div class="control-group">
+        <!-- Password-->
+        <label class="control-label" for="password"><b>Group Password</b></label>
+        <div class="controls">
+          <input type="password" size="50" maxlength="20" id="password" name="password" placeholder="" class="input-xlarge">
+          <p class="help-block">Group Password should be at least 4 characters, it will allow access for other users</p>
+        </div>
+      </div>
+   
+      <div class="control-group">
+        <!-- Password -->
+        <label class="control-label"  for="password_confirm"><b>Password (Confirm)</b></label>
+        <div class="controls">
+          <input type="password" size="50" maxlength="20" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
+          <p class="help-block">Please confirm group password</p>
+        </div>
+      </div>
+   
+        <div class="controls">
+          <button type="submit" class="col-md-12 btn btn-dark" style="color: #F5EFE6">Create Group
+          </button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>
+{% endblock content %}
