@@ -1,0 +1,32 @@
+{% extends "users/base.html" %}
+{% block title %} My Groups Page {% endblock title%}
+{% block content %}
+
+
+<div class="jumbotron" style="background-color: #F6F6F6">
+
+  <div class="container mt-1">
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://media.istockphoto.com/id/843005556/pl/wektor/siatk%C3%B3wka-pi%C5%82ka-cienka-ikona-linii-liniowy-symbol-wektora.jpg?s=612x612&w=0&k=20&c=LhXUDePrbsVCxG7JKNXkC-R636Dcshmjhcire1AHblo=" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Politechnika Wroclawska - sekcja siatkowki</h5>
+          <p class="card-text">Reprezentacja Politechniki Wroclawskiej w siatkowce</p>
+          <a href="{%url 'team' %}" class="btn btn-primary" style="background-color: #579BB1; border-color: #579BB1">Check Team</a>
+        </div>
+      </div>
+      &nbsp&nbsp
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src=http://koszykowka.wks-slask.wroc.pl/wp-content/themes/wks-basketball-theme/images/wks-logo.png alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Slask Wroclaw u15 pilka nozna</h5>
+          <p class="card-text">Grupa mlodziezowa pilki noznej do lat 15 Slask Wroclaw</p>
+          <a href="{%url 'team' %}" class="btn btn-primary" style="background-color: #579BB1; border-color: #579BB1">Check Team</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %}

@@ -85,3 +85,9 @@ def create_group(request):
 
 def add_group(request):
     return render(request, 'users/add_group.html')
+
+def my_groups(request):
+    return render(request, 'users/my_groups.html')
+
+def team(request):
+    return render(request, 'users/team.html')
