@@ -4,7 +4,52 @@
 
 
 <div class="jumbotron" style="background-color: #F6F6F6">
+<div class="container mt-5">
 
+  <div class="card bg-dark mb-3" style="max-width: 100rem;">
+    <#a class="Dashboard-link" href="{%url 'chat' %}">
+    <div class="card-header" style="color:White"><b>Chat</b></div>
+    <div class="card-body">
+      <h5 class="card-title" style="color:White">Chat with other members</h5>
+      <p class="card-text" style="color:White">You can find the messeges from other members of team</p>
+    </div>
+  </div>
+  <div class="card bg-dark mb-3" style="max-width: 100rem;">
+    <#a class="Dashboard-link" href="{%url 'callendar' %}">
+    <div class="card-header" style="color:White"><b>Callendar</b></div>
+    <div class="card-body">
+      <h5 class="card-title" style="color:White">Callendar of events</h5>
+      <p class="card-text" style="color:White">You can check your incoming events</p>
+    </div>
+  </div>
+  <div class="card bg-dark mb-3" style="max-width: 100rem;">
+    <#a class="Dashboard-link" href="{%url 'board' %}">
+    <div class="card-header" style="color:White"><b>Activities board</b></div>
+    <div class="card-body">
+      <h5 class="card-title" style="color:White">Board of team activites</h5>
+      <p class="card-text" style="color:White">You can check what is posted by team members</p>
+    </div>
+  </div>
+  <div class="card bg-dark mb-3" style="max-width: 100rem;">
+    <#a class="Dashboard-link" href="{%url 'attendance' %}">
+    <div class="card-header" style="color:White"><b>Attendance List</b></div>
+    <div class="card-body">
+      <h5 class="card-title" style="color:White">Attendance list of players</h5>
+      <p class="card-text" style="color:White">You can check if a player was present during activity</p>
+    </div>
+  </div>
+  <div class="card bg-dark mb-3" style="max-width: 100rem;">
+    <#a class="Dashboard-link" href="{%url 'contributions' %}">
+    <div class="card-header" style="color:White"><b>Payments</b></div>
+    <div class="card-body">
+      <h5 class="card-title" style="color:White">Payments of fee's</h5>
+      <p class="card-text" style="color:White">You can check if player fee's are paid in date</p>
+    </a>
+    </div>
+  </div>
+
+
+</div>
 </div>
 
 {% endblock content %}
