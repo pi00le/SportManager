@@ -94,3 +94,6 @@ def team(request):
 
 def chat(request):
     return render(request, 'users/chat.html')
+
+def callendar(request):
+    return render(request, 'users/callendar.html')
