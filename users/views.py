@@ -91,3 +91,6 @@ def my_groups(request):
 
 def team(request):
     return render(request, 'users/team.html')
+
+def chat(request):
+    return render(request, 'users/chat.html')

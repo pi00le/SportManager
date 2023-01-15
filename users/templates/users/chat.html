@@ -1,0 +1,105 @@
+{% extends "users/base.html" %}
+{% block title %} Team Page {% endblock title%}
+{% block content %}
+
+<style>
+#chat-app {
+  display: flex;
+  height: 500px;
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+#messages {
+  flex: 3;
+  overflow-y: scroll;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.chat-bubble {
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+  background-color: #33ccff;
+  color: white;
+}
+
+.me {
+  align-self: flex-end;
+}
+
+.me .chat-bubble {
+  background-color: #1e90ff;
+  color: white;
+}
+
+#input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+}
+
+#input textarea {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+
+#input button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #1e90ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#input button:hover {
+  background-color: #00bfff;
+}
+</style>
+
+
+<div class="jumbotron" style="background-color: #F6F6F6">
+  <div id="chat-app">
+    <div id="messages">
+      <div class="message">
+        <div class="chat-bubble">
+          Hi there!
+        </div>
+      </div>
+      <div class="message me">
+        <div class="chat-bubble">
+          Hey! How's it going?
+        </div>
+      </div>
+    </div>
+    <div id="input">
+      <textarea placeholder="Type your message here"></textarea>
+      <button>Send</button>
+    </div>
+  </div>
+  <br><br>
+  <div class="col-md-12">
+      <a class="btn btn-primary btn-lg btn-block" style="background-color: #444941; border-color: #444941" href="{%url 'team' %}"
+      role="button">
+      Back to your team site
+      </a>
+  </div>
+</div>
+
+{% endblock content %}

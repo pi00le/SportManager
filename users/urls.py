@@ -1,5 +1,5 @@
 from django.urls import path, include
-from .views import home, profile, RegisterView, create_group, add_group, my_groups, team
+from .views import home, profile, RegisterView, create_group, add_group, my_groups, team, chat
 
 urlpatterns = [
     path('', home, name='users-home'),
@@ -9,5 +9,5 @@ urlpatterns = [
     path('add_group/', add_group, name='add_group'),
     path('my_groups/', my_groups, name='my_groups'),
     path('team/', team, name='team'),
+    path('chat/', chat, name='chat'),
 ]
-
