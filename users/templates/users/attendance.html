@@ -1,0 +1,88 @@
+{% extends "users/base.html" %}
+{% block title %} Create Group Page {% endblock title%}
+{% block content %}
+
+<style>
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+.paid {
+  color: green;
+}
+.not-paid {
+  color: red;
+}
+</style>
+
+<div class="jumbotron" style="background-color: #F6F6F6">
+  <table>
+    <tr>
+      <th>Player</th>
+      <th>Group</th>
+      <th>Attendance</th>
+      <th>Type of Activity</th>
+      <th>Date of Activity</th>
+    </tr>
+    <tr>
+      <td>Jan Kowalski</td>
+      <td>U-14</td>
+      <td>+</td>
+      <td>Football training</td>
+      <td>01/20/2023 5 PM</td>
+    </tr>
+    <tr>
+      <td>Michael Smith</td>
+      <td>U-14</td>
+      <td>-</td>
+      <td>Football training</td>
+      <td>01/20/2023 5 PM</td>
+    </tr>
+    
+    <tr>
+      <td>Jan Kowalski</td>
+      <td>U-14</td>
+      <td>-</td>
+      <td>Streching</td>
+      <td>01/20/2023 9 PM</td>
+    </tr>
+    <tr>
+      <td>Michael Smith</td>
+      <td>U-14</td>
+      <td>+</td>
+      <td>Streching</td>
+      <td>01/20/2023 9 PM</td>
+    </tr>
+    <tr>
+      <td>Massimiliano Rossi</td>
+      <td>U-17</td>
+      <td>-</td>
+      <td>Football training</td>
+      <td>01/21/2023 5 PM</td>
+    </tr>
+    <tr>
+      <td>Massimiliano Rossi</td>
+      <td>U-17</td>
+      <td>+</td>
+      <td>Football training</td>
+      <td>01/22/2023 5 PM</td>
+    </tr>
+  </table>
+  <br>
+  <div class="col-md-12">
+        <a class="btn btn-primary btn-lg btn-block" style="background-color: #444941; border-color: #444941" href="{%url 'team' %}"
+        role="button">
+        Back to your team site
+        </a>
+  </div>
+</div>
+{% endblock content %}
