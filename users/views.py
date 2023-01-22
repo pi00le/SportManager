@@ -62,7 +62,6 @@ class CustomLoginView(LoginView):
         # else browser session will be as long as the session cookie time "SESSION_COOKIE_AGE" defined in settings.py
         return super(CustomLoginView, self).form_valid(form)
 
-
 @login_required
 def profile(request):
     if request.method == 'POST':
@@ -97,3 +96,6 @@ def chat(request):
 
 def callendar(request):
     return render(request, 'users/callendar.html')
+
+def board(request):
+    return render(request, 'users/board.html')

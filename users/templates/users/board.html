@@ -1,0 +1,136 @@
+{% extends "users/base.html" %}
+{% block title %} Team Page {% endblock title%}
+{% block content %}
+
+<style>
+
+.content {
+    margin: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    border: none;
+    background-color: #577BC1;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button[type="submit"]:active {
+    background-color: #294f85;
+}
+
+.posts {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #C4D7E0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.post-content {
+    margin-top: 10px;
+}
+
+.interaction {
+    margin-top:
+}
+.comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+ 
+</style>
+
+<div class="jumbotron" style="background-color: #F6F6F6">
+
+    <div class="col-md-12">
+      <a class="btn btn-primary btn-lg btn-block" style="background-color: #444941; border-color: #444941" href="{%url 'team' %}"
+      role="button">
+      Back to your team site
+      </a>
+  </div>
+    <div class="content">
+        <form>
+            <textarea placeholder="Write a post"></textarea>
+            <button type="submit">Post</button>
+        </form>
+        <div class="posts">
+            <div class="post">
+                <div class="user-info">
+                    <img src="https://i.insider.com/5d93507b2e22af3b8a668e86?width=750&format=jpeg&auto=webp" alt="User Profile Picture">
+                    <p class="username">Joao Felix</p>
+                </div>
+                <p class="post-content">Welcome Everyone! I am looking forward to our first training!</p>
+                <div class="interaction">
+                    <button class="like-btn">Like</button>
+                    <button class="comment-btn">Comment</button>
+                </div>
+                <div class="comments">
+                    <form>
+                        <textarea placeholder="Write a comment"></textarea>
+                    </form>
+                    <div class="comment">
+                        <img src="https://asroma2-cloudinary.corebine.com/asroma2-production/image/upload/c_fill,dpr_3.0,f_webp,g_auto,q_auto,w_768/v1/asroma2-prod/HeadshotMourinho2_iwlwuc" alt="User Profile Picture">
+                        <p class="username">Jose Mourinho</p>
+                        <p class="comment-text">Hello! Good to see you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="posts">
+            <div class="post">
+                <div class="user-info">
+                    <img src="https://asroma2-cloudinary.corebine.com/asroma2-production/image/upload/c_fill,dpr_3.0,f_webp,g_auto,q_auto,w_768/v1/asroma2-prod/HeadshotMourinho2_iwlwuc" alt="User Profile Picture">
+                    <p class="username">Jose Mourinho</p>
+                </div>
+                <p class="post-content">Welcome Everyone! I am looking forward to our first training!</p>
+                <div class="interaction">
+                    <button class="like-btn">Like</button>
+                    <button class="comment-btn">Comment</button>
+                </div>
+                <div class="comments">
+                    <form>
+                        <textarea placeholder="Write a comment"></textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
