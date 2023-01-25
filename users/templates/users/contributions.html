@@ -1,0 +1,95 @@
+{% extends "users/base.html" %}
+{% block title %} Create Group Page {% endblock title%}
+{% block content %}
+
+<style>
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+.paid {
+  color: green;
+}
+.not-paid {
+  color: red;
+}
+</style>
+
+<div class="jumbotron" style="background-color: #F6F6F6">
+<table>
+  <tr>
+    <th>Player</th>
+    <th>Group</th>
+    <th>Contribution</th>
+    <th>Status</th>
+    <th>Monthly Period</th>
+    <th>Date of Contribution</th>
+  </tr>
+  <tr>
+    <td>Jan Kowlski</td>
+    <td>U-14</td>
+    <td>$100</td>
+    <td>Paid</td>
+    <td>January</td>
+    <td>01/15/2023</td>
+  </tr>
+  <tr>
+    <td>Michael Smith</td>
+    <td>U-14</td>
+    <td>$100</td>
+    <td>Not Paid</td>
+    <td>January</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Massimiliano Rossi</td>
+    <td>U-17</td>
+    <td>$150</td>
+    <td>Paid</td>
+    <td>January</td>
+    <td>01/20/2023</td>
+  </tr>
+  <tr>
+    <td>Jan Kowlski</td>
+    <td>U-14</td>
+    <td>$100</td>
+    <td>Not Paid</td>
+    <td>Ferbuary</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Michael Smith</td>
+    <td>U-14</td>
+    <td>$100</td>
+    <td>Not Paid</td>
+    <td>Ferbuary</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Massimiliano Rossi</td>
+    <td>U-17</td>
+    <td>$150</td>
+    <td>Not Paid</td>
+    <td>Ferbuary</td>
+    <td>-</td>
+  </tr>
+</table>
+<br>
+  <div class="col-md-12">
+        <a class="btn btn-primary btn-lg btn-block" style="background-color: #444941; border-color: #444941" href="{%url 'team' %}"
+        role="button">
+        Back to your team site
+        </a>
+  </div>
+</div>
+
+
+{% endblock content %}

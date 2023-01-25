@@ -101,5 +101,8 @@ def callendar(request):
 def board(request):
     return render(request, 'users/board.html')
 
+def contributions(request):
+    return render(request, 'users/contributions.html')
+
 def attendance(request):
     return render(request, 'users/attendance.html')
